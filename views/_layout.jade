@@ -12,7 +12,8 @@ html(lang='en')
 
     // JS
     script(src="/js/jquery-3.2.1.js")
-    script(type="text/javascript" src="/js/bootstrap.js")
+    script(src="/js/bootstrap.js")
+    script(src='/js/bootstrap.min.js')
 
     // Stylesheets
     link(rel='stylesheet', href='/css/bootstrap.min.css')
@@ -40,17 +41,7 @@ html(lang='en')
           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-
-    script(src='/js/bootstrap.min.js')
-    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-
+        
     block content
-
-    // JS
-
-
-
-    //- script(src='/js/holder.min.js')
-    //- script(src='/js/ie10-viewport-bug-workaround.js')
 
   include _footer
