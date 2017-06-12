@@ -30,7 +30,7 @@ gulp.task('build', ['sass', 'jade'], function() {
 });
 
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['build'], function() {
   return gulp.src('_site/**/*')
     .pipe(
       deploy({
