@@ -1,0 +1,255 @@
+extends _layout
+
+block content
+  header
+  .nav-wrapper
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='#' style='margin-bottom:0px;')
+            img(src='/img/logo.png' height="55px")
+        div
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.front-page.active
+                a(href='/team/') The Team
+
+              li.dropdown.front-page
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | The Car
+                  span
+                ul.dropdown-menu
+                  li
+                    a(href='/car2017/') 2017 Car
+                  li
+                    a(href='/car2016/') 2016 Car
+                  li
+                    a(href='/car2015/') 2015 Car
+                  li
+                    a(href='/car2014/') 2014 Car
+                  li
+                    a(href='/car2013/') 2013 Car
+                  li
+                    a(href='/car2012/') 2012 Car
+
+              li.front-page
+                a(href='/comp/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page
+                a(href='/contact/') Contact
+
+
+  .container-fluid
+    .row
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/UV17/compteam.JPG' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+      .col-lg-2
+  .container-fluid(style="margin-bottom:50px;")
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800;")
+          | The UVic Formula Motorsport Team
+        p
+          | The UVic Formula Motorsport team is a university club whose goal is to design and build a small open wheel
+          | formula style car that competes in the world's largest collegiate design competition in the world, Formula SAE.
+          br
+        p
+          | The club is made up of leads for different sections of the team, along with many other students who operate
+          | outside the curriculum and outside the classroom, striving to acquire applicable lessons in
+          | engineering theory, business and relations, hands-on-design, and manufacturing.
+          br
+        p
+          | Each one of our members are highly dedicated and motivated students who want to get the most out of their
+          | degree. Through the year, thousands of hours are put into the development of the
+          | prototype vehicle,
+          | pushing experience, knowledge, and engineering judgement far passed that solely gained during a bachelor's.
+          | Our members
+          br
+
+      .col-lg-2
+  br
+  .container.marketing
+    .row
+      // First row
+      .col-lg-2
+      .col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2016/Wilson.jpg', alt='Wilson Hay', width='300', height='300')
+        h2 Wilson Hay
+        h4
+          strong
+            | Technical Team Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Technical Project Consultation
+          br
+          | Team Coordination
+          br
+          | System Integration
+
+      .col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2016/Josef.jpg', alt='Josef Svorkdal', width='300', height='300')
+        h2 Josef Svorkdal
+        h4
+          strong
+            | Project Manager & Aerodynamics Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Project Management
+          br
+          | Team Coordination
+          br
+          | Time Management
+      .col-lg-2
+
+    br
+  .container.marketing
+    .row
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2016/Kyle.jpg', alt='Kyle Mulzet', width='280', height='280')
+        h2 Kyle Mulzet
+        h4
+          strong
+            | Powertrain Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Engine Performance Design
+          br
+          | ECU Calibration
+          br
+          | Traction & Launch Control
+
+        //  .col-md-6.col-lg-4.teambox
+        //    img.img-circle.teampic(src='/img/team-2016/Josef.jpg', alt='Josef Svorkdal', width='140', height='140')
+        //    h2 Josef Svorkdal
+        //    h4
+        //      strong
+        //        | Aerodynamics Lead
+        //    hr(style="margin-top:0;margin-bottom:0;")
+        //    p
+        //      | Vehicle Aerodynamics
+        //      br
+        //      | Composites
+        //-     br
+        //-      | Aesthetics
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2016/Ryan.jpg', alt='Ryan Vorster', width='280', height='280')
+        h2 Ryan Vorster
+        h4
+          strong
+            | Vehicle Dynamics Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Vehicle Dynamics Simulation
+          br
+          | Suspension Design and Manufacturing
+          br
+          | Tire Modelling
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2016/Peter.jpg', alt='Peter de Schepper', width='280', height='280')
+        h2 Peter de Schepper
+        h4
+          strong
+            | Driver Controls Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Steering, Braking, & Shifting
+          br
+          | Data Analysis
+          br
+          | Driver Training
+
+    br
+    .row
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Darryl Ring', width='280', height='280')
+        h2 Darryl Ring
+        h4
+          strong
+            | Electrical Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | ECU & DAQ
+          br
+          | Emergency Shut Offs
+          br
+          | Batteries
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2016/Zac.jpg', alt='Zachary Van Galen', width='280', height='280')
+        h2 Zachary Van Galen
+        h4
+          strong
+            | Administration Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Administration
+          br
+          | Sponsorship
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2016/Lewis.jpg', alt='Lewis Janzen', width='280', height='280')
+        h2 Lewis Janzen
+        h4
+          strong
+            | Frame Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Overseeing Chassis
+          br
+          | Design and Fabrication
+    br
+    .row
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2016/Sean.jpg', alt='Sean Burt', width='280', height='280')
+        h2 Sean Burt
+        h4
+          strong
+            | Software Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Website
+          br
+          | Dash Software
+
+
+      //- .col-md-6.col-lg-4.teambox
+      //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')
+      //-   h2 noname
+      //-   h4
+      //-     strong
+      //-       | Drivetrain Lead
+      //-   hr(style="margin-top:0;margin-bottom:0;")
+      //-   p
+      //-     | Differential
+      //-     br
+      //-     | Final Drive
+      //-     br
+      //-     | Drive Axles
+
+      //- .col-md-6.col-lg-4.teambox
+      //-   img.img-circle.teampic(src='/img/team/.jpg', alt='', width='140', height='140')
+      //-   h2 noname
+      //-   h4
+      //-     strong
+      //-       | Business Lead
+      //-   hr(style="margin-top:0;margin-bottom:0;")
+      //-   p
+      //-     | Sponsorship
+      //-     br
+      //-     | External Relations
+      //-     br
+      //-     | Grant Acquisition
+
+  include _sponsors.jade

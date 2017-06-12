@@ -1,0 +1,56 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    link(rel='icon', href='/img/favicon.ico')
+    title= title
+
+    // JS
+    script(src="/js/jquery-3.2.1.js")
+    script(type="text/javascript" src="/js/bootstrap.js")
+
+    // Stylesheets
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/bootstrap-social.css')
+    link(rel='stylesheet', href='/css/font-awesome.css')
+
+    // Custom Styles
+    link(rel='stylesheet', href='/css/carousel.css')
+    link(rel='stylesheet', href='/css/custom.css')
+    link(rel='stylesheet', href='/css/font.css')
+
+    // custom javascript
+    script(src='/js/feed.js')
+    script(src='/js/video.js')
+    script(src='/js/touchhover.js')
+
+  body
+    #fb-root
+      script.
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    script(src='/js/bootstrap.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+
+    block content
+
+    // JS
+
+
+
+    //- script(src='/js/holder.min.js')
+    //- script(src='/js/ie10-viewport-bug-workaround.js')
+
+  include _footer
