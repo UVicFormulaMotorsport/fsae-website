@@ -1,4 +1,4 @@
-extends _layout
+extends ../_layout
 
 block content
   link(rel='stylesheet', href='/css/car.css')
@@ -46,12 +46,27 @@ block content
               li.front-page
                 a(href='/contact/') Contact
 
+
+
   // ABOUT THE CARS
   .container-fluid
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/car2011.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+        img.img-responsive(src='/img/UV16carNew.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+      .col-lg-2
+
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800;")
+          | UV16 Features
+        p
+          | This year's car featured a 3D printed oil pan, air intake, valve cover and steering wheel.
+          | We upgraded to a LifeRacing ECU, switched to a bevel gearbox, and incorporated a custom Power Distribution Unit (PDU).
+          | A new frame and suspension were designed and fabricated to reduce weight and improve handling. The car and
+          | modifications follow a 178 page competition rule book. Have a look at our competition page for more information
+          | on the world FSAE event at Michigan.
       .col-lg-2
     .row
       .col-lg-2
@@ -59,7 +74,6 @@ block content
         // Content
         #content
           section.last
-            h3(style="font-weight:800;") The UV13
             table.default
               thead
                 tr
@@ -68,10 +82,10 @@ block content
               tbody
                 tr
                   td Car Number
-                  td 16
+                  td 21
                 tr
                   td Color
-                  td Two tone black and red
+                  td White with blue, red, and yellow stripes
                 tr
                   td Frame
                   td 4130 Chromoly steel space frame
@@ -82,26 +96,26 @@ block content
                 tr
                   td Suspension
                   td
-                    | Independent unequal length chromoly A-arms, with pull rod actuated Cane Creek shocks
+                    | Independent unequal length chromoly A-arms, with pullrod actuated Cane Creek shocks
                 tr
                   td Wheels
                   td
-                    | In house centre design machined by Prototype Equipment Design with Kodiak 13×7 shells
+                    | In-house centre design machined by Prototype Equipment Design with Kodiak 13×7 shells
                 tr
                   td Engine
-                  td Honda CBR 600 F4I with MegaSquirt ECM
+                  td Honda CBR 600 F4i with Life Racing F88RX
                 tr
                   td Power/Torque
                   td 95 HP @ 12500 RPM/54 ft·lbs @ 8250 RPM
                 tr
                   td Fuel
-                  td Pump 94 Octane
+                  td 100 Octane Race
                 tr
                   td Transmission
                   td 6-speed Sequential
                 tr
                   td Shifter
-                  td Electro-pneumatic, button actuated shifting system
+                  td Electro-pneumatic, button-actuated shifting system resulting in sub-100ms shifts
                 tr
                   td Final Drive
                   td #520 chain, 11:44 ratio
@@ -110,10 +124,10 @@ block content
                   td Custom aluminum carrier housing Zexel-Torsen torque biasing gears
                 tr
                   td Brakes, Front
-                  td Dual outboard 10.5" steel rotors, Brembo calipers
+                  td Floating 9.2" Grey Cast Iron Rotors, Brembo Calipers
                 tr
                   td Brakes, Rear
-                  td Dual outboard 9.5" steel rotors, Brembo calipers
+                  td Floating 8" Grey  Cast Iron Rotors, Brembo Calipers
               thead
                 tr
                   th Dimensions
@@ -130,10 +144,10 @@ block content
                   td 107.4″
                 tr
                   td Weight
-                  td 484 lbs
+                  td 506 lbs / 230 kg
                 tr
                   td Weight Distribution, Front:Rear
-                  td 49.2:50.8
+                  td 48.5:51.5
               thead
                 tr
                   th Performance
@@ -141,38 +155,40 @@ block content
               tbody
                 tr
                   td 75 Metre Sprint
-                  td 4.229 s
+                  td 4.409 s
                 tr
                   td Top Speed
-                  td 180 km/h
+                  td 160 km/h
                 tr
                   td Lateral Grip
-                  td 1.44 g
+                  td 2.2 g
                 tr
                   td Braking
-                  td 1.6 g
+                  td 1.5 g
         .col-lg-2
     .row
       .col-lg-2
       .col-lg-8
         section.widget.thumbnails
           .col-lg-3
-            h3(style="font-weight:800;text-align: center;") 2013
+            h3(style="font-weight:800; text-align: center;") 2013
             .col-lg-12.past-cars
-              img(src='/img/car2013.jpg', alt='UV13')
+              a(href='/car2013/')
+                img.img-responsive(src='/img/car2012.jpg', alt='UV13')
           .col-lg-3
-            h3(style="font-weight:800;text-align: center;") 2014
+            h3(style="font-weight:800; text-align: center;") 2014
             .col-lg-12.past-cars
-              img(src='/img/car2014.jpg', alt='UV14')
+              a(href='/car2014/')
+                img.img-responsive(src='/img/car2013.jpg', alt='UV15')
           .col-lg-3
-            h3(style="font-weight:800;text-align: center;") 2015
+            h3(style="font-weight:800; text-align: center;") 2015
             .col-lg-12.past-cars
               a(href='/car2015/')
-                img(src='/img/car2015.jpg', alt='UV15')
+                img.img-responsive(src='/img/car2015-2.jpg', alt='UV15')
           .col-lg-3
-            h3(style="font-weight:800;text-align: center;") 2016
+            h3(style="font-weight:800; text-align: center;") 2017
             .col-lg-12.past-cars
-              a(href='/car2016/')
-                img(src='/img/Speedway_autocross/car2016.jpg', alt='UV16')
+              a(href='/car2017/')
+                img.img-responsive(src='/img/car2017.jpg', alt='UV17')
       .col-lg-2
-  include _sponsors.jade
+  include ../_sponsors.jade

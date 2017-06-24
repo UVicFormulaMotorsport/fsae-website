@@ -18,9 +18,9 @@ gulp.task('sass', function() {
 });
 
 gulp.task('jade', function() {
-    return gulp.src('views/*.jade')
+    return gulp.src('views/**/index.jade')
         .pipe(jade())
-        .pipe(gulp.dest('_site'));
+        .pipe(gulp.dest('_site/'));
 });
 
 

@@ -1,4 +1,4 @@
-extends _layout
+extends ../_layout
 
 block content
   link(rel='stylesheet', href='/css/car.css')
@@ -51,18 +51,12 @@ block content
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/car2012.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+        img.img-responsive(src='/img/car2013.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
       .col-lg-2
-
     .row
       .col-lg-2
       .col-lg-8
         section.widget.thumbnails
-          .col-lg-3
-            h3(style="font-weight:800;text-align: center;") 2013
-            .col-lg-12.past-cars
-              a(href='/car2013/')
-                img(src='/img/car2013.jpg', alt='UV13')
           .col-lg-3
             h3(style="font-weight:800;text-align: center;") 2014
             .col-lg-12.past-cars
@@ -77,6 +71,11 @@ block content
             h3(style="font-weight:800;text-align: center;") 2016
             .col-lg-12.past-cars
               a(href='/car2016/')
-                img(src='/img/Speedway_autocross/autoCross1.jpg', alt='UV16')
+                img(src='/img/car2016.jpg', alt='UV16')
+          .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2017
+            .col-lg-12.past-cars
+              a(href='/car2017/')
+                img(src='/img/car2017.JPG', alt='UV16')
       .col-lg-2
-  include _sponsors.jade
+  include ../_sponsors.jade
