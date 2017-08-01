@@ -1,10 +1,23 @@
 var gulp          = require('gulp');
-var browserSync   = require('browser-sync');
 var sass          = require('gulp-sass');
 var prefix        = require('gulp-autoprefixer');
 var cp            = require('child_process');
 var jade          = require('gulp-jade');
 var deploy        = require('gulp-gh-pages');
+var browserSync   = require('browser-sync');
+
+gulp.task('rebuild', ['build'], function() {
+    browserSync.reload();
+});
+
+gulp.task('browser-sync', ['build'], function() {
+    browserSync({
+        server: {
+            baseDir: '_site'
+        },
+        open: true
+    });
+});
 
 gulp.task('sass', function() {
     return gulp.src('public/css/main.scss')
@@ -39,4 +52,11 @@ gulp.task('deploy', ['build'], function() {
     );
 });
 
-gulp.task('default', ['sass', 'jade']);
+gulp.task('watch', function() {
+    gulp.watch('public/css/**', ['sass']);
+    gulp.watch('public/js/**', ['js']);
+    gulp.watch('views/*/*.jade', ['jade']);
+    gulp.watch('_site/**', ['rebuild']);
+});
+
+gulp.task('default', ['browser-sync']);
