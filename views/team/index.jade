@@ -20,7 +20,7 @@ block content
               li.front-page.active
                 a(href='/team/') The Team
               li.front-page
-                a(href='/car2017/') The Car
+                a(href='/car2019/') The Car
               li.front-page
                 a(href='/competition/') The Competition
               li.front-page
@@ -33,7 +33,7 @@ block content
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/UV17/compteam.JPG' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+        img.img-responsive(src='/img/team2019.JPG' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
       .col-lg-2
   .container-fluid(style="margin-bottom:50px;")
     .row
@@ -67,67 +67,85 @@ block content
       // First row
       .col-lg-2
       .col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2016/Wilson.jpg', alt='Wilson Hay', width='300', height='300')
-        h2 Wilson Hay
+        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='Wilson Hay', width='300', height='300')
+        h2 Blake Sigwin
         h4
           strong
-            | Technical Team Lead
+            | Team Principal
         hr(style="margin-top:0;margin-bottom:0;")
         p
-          | Technical Project Consultation
+          | Administration
           br
-          | Team Coordination
+          | Sponsorship Coordinator
           br
-          | System Integration
+          | Team Direction
 
       .col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2016/Josef.jpg', alt='Josef Svorkdal', width='300', height='300')
-        h2 Josef Svorkdal
+        img.img-circle.teampic(src='/img/team-2020/Raimund.jpg', alt='Josef Svorkdal', width='300', height='300')
+        h2 Raimund Mullin
         h4
           strong
-            | Project Manager & Aerodynamics Lead
+            | Project Manager
         hr(style="margin-top:0;margin-bottom:0;")
         p
           | Project Management
           br
           | Team Coordination
           br
-          | Time Management
+          | Budget Management
+
+        .col-lg-4.teambox
+          img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='Josef Svorkdal', width='300', height='300')
+          h2 Josiah Macleod
+          h4
+            strong
+              | Chief Engineer
+          hr(style="margin-top:0;margin-bottom:0;")
+          p
+            | System Integration
+            br
+            | Design Review Coordination
+            br
+            | Standards Development
+
       .col-lg-2
 
     br
   .container.marketing
     .row
+
+    // Second Row
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2016/Kyle.jpg', alt='Kyle Mulzet', width='280', height='280')
-        h2 Kyle Mulzet
+        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='Kyle Mulzet', width='280', height='280')
+        h2 Peter Touchinski
         h4
           strong
             | Powertrain Lead
         hr(style="margin-top:0;margin-bottom:0;")
         p
-          | Engine Performance Design
+          | Engine Performance Parts Design
           br
-          | ECU Calibration
+          | Engine Tuning
           br
-          | Traction & Launch Control
+          | Traction & Launch Control Calibration
 
-        //  .col-md-6.col-lg-4.teambox
-        //    img.img-circle.teampic(src='/img/team-2016/Josef.jpg', alt='Josef Svorkdal', width='140', height='140')
-        //    h2 Josef Svorkdal
-        //    h4
-        //      strong
-        //        | Aerodynamics Lead
-        //    hr(style="margin-top:0;margin-bottom:0;")
-        //    p
-        //      | Vehicle Aerodynamics
-        //      br
-        //      | Composites
-        //-     br
-        //-      | Aesthetics
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2016/Ryan.jpg', alt='Ryan Vorster', width='280', height='280')
-        h2 Ryan Vorster
+        img.img-circle.teampic(src='/img/team-2020/Mike.jpg', alt='Zachary Van Galen', width='280', height='280')
+        h2 Mike Mckee
+        h4
+          strong
+            | Drivetrain Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Transmission Design
+          br
+          | Shifting System
+          br
+          | Differential and Axel Design
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2020/Nigel.jpg', alt='Ryan Vorster', width='280', height='280')
+        h2 Nigel Swab
         h4
           strong
             | Vehicle Dynamics Lead
@@ -135,77 +153,96 @@ block content
         p
           | Vehicle Dynamics Simulation
           br
-          | Suspension Design and Manufacturing
-          br
           | Tire Modelling
-
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2016/Peter.jpg', alt='Peter de Schepper', width='280', height='280')
-        h2 Peter de Schepper
-        h4
-          strong
-            | Driver Controls Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Steering, Braking, & Shifting
           br
           | Data Analysis
-          br
-          | Driver Training
 
     br
     .row
 
+    // Third Row
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team/noimg.jpg', alt='Darryl Ring', width='280', height='280')
-        h2 Darryl Ring
+        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='Darryl Ring', width='280', height='280')
+        h2
         h4
           strong
             | Electrical Lead
         hr(style="margin-top:0;margin-bottom:0;")
         p
-          | ECU & DAQ
+          | Wiring Loom Manufacturing
           br
-          | Emergency Shut Offs
+          | PCB Design
           br
-          | Batteries
+          | Sensor Selection
 
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2016/Zac.jpg', alt='Zachary Van Galen', width='280', height='280')
-        h2 Zachary Van Galen
+        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='Zachary Van Galen', width='280', height='280')
+        h2 Alec MacMillan
         h4
           strong
-            | Administration Lead
+            | Suspension and Brakes Lead
         hr(style="margin-top:0;margin-bottom:0;")
         p
-          | Administration
+          | Suspension and Brake Design
           br
-          | Sponsorship
+          | Suspension Manufacturing
 
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2016/Lewis.jpg', alt='Lewis Janzen', width='280', height='280')
-        h2 Lewis Janzen
+        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='Lewis Janzen', width='280', height='280')
+        h2
         h4
           strong
             | Frame Lead
         hr(style="margin-top:0;margin-bottom:0;")
         p
-          | Overseeing Chassis
+          | Chassis Design
           br
-          | Design and Fabrication
+          | Fabrication
+
     br
     .row
 
+    // Fourth Row
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2016/Sean.jpg', alt='Sean Burt', width='280', height='280')
-        h2 Sean Burt
+        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='Sean Burt', width='280', height='280')
+        h2 Duncan Wallace
         h4
           strong
-            | Software Lead
+            | Ergonomics Lead
         hr(style="margin-top:0;margin-bottom:0;")
         p
-          | Website
+          | Driver Ergonomics
           br
-          | Dash Software
+          | Steering Wheel
+          br
+          | Pedal Box
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2020/Axel.jpg', alt='Zachary Van Galen', width='280', height='280')
+        h2 Axel Edongo
+        h4
+          strong
+            | Aerodynamics Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Composites Research
+          br
+          | Composites Manufacturing
+          br
+          | Mold Design
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2020/David.jpg', alt='Josef Svorkdal', width='140', height='140')
+        h2 David Kania
+        h4
+          strong
+            | Aerodynamics Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Vehicle Aerodynamics
+          br
+          | Composites
+          br
+          | Aesthetics
 
   include ../_sponsors.jade

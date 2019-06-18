@@ -11,7 +11,7 @@ block content
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a(href='#' style='margin-bottom:0px;')
+          a(href='/' style='margin-bottom:0px;')
             img(src='/img/logo.png' height="55px")
         div
           #myNavbar.collapse.navbar-collapse
@@ -29,21 +29,33 @@ block content
               li.front-page
                 a(href='/contact/') Contact
 
-  //  THE CARS
+  // ABOUT THE CARS
   .container-fluid
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/car2015.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+        img.img-responsive(src='/img/car2018.JPG' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
       .col-lg-2
 
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800;")
+          | UV18 Features
+        p
+          | The 2018 car features major improvements such as CFRP bonded suspension and 4130 floating
+          | brake rotors while building on the successful platform of the 2017 car. The use of a forward
+          | roll hoop bracing was a major departure from past years and allowed a reduction of moments
+          | of inertia, and rule flexibility in the rear of the frame. The introduction of electronic
+          | throttle control was another major focus aimed at improving vehicle predictability.
+
+      .col-lg-2
     .row
       .col-lg-2
       .col-sm-8
         // Content
         #content
           section.last
-            h3(style="font-weight:800; color: black;") UV15
             table.default
               thead
                 tr
@@ -52,40 +64,40 @@ block content
               tbody
                 tr
                   td Car Number
-                  td 119
+                  td 115
                 tr
                   td Color
-                  td Two tone black and red
+                  td White with yellow accents
                 tr
                   td Frame
                   td 4130 Chromoly steel space frame
                 tr
                   td Aero
                   td
-                    | Carbon Fibre: 3-Piece Body, 3-Element Front Wing, 4-Element Rear Wing, Diffuser, and 2 Sidepods
+                    | Carbon Fibre: 4-Piece Body, 3-Element Front Wing, 5-Element Rear Wing, and Diffuser
                 tr
                   td Suspension
                   td
-                    | Independent unequal length chromoly A-arms, with pull rod actuated Cane Creek shocks
+                    | Independent unequal length carbon fibre A-arms, with pullrod actuated Cane Creek shocks
                 tr
                   td Wheels
                   td
-                    | In house centre design machined by Prototype Equipment Design with Kodiak 13×7 shells
+                    | 13" 4-bolt pattern OZ one-piece magnesium.
                 tr
                   td Engine
-                  td Honda CBR 600 F4I with Liferacing F88RX
+                  td Honda CBR 600 F4i with Life Racing F88RX
                 tr
                   td Power/Torque
                   td 95 HP @ 12500 RPM/54 ft·lbs @ 8250 RPM
                 tr
                   td Fuel
-                  td 100 Octane Race
+                  td 94 Octane Race
                 tr
                   td Transmission
                   td 6-speed Sequential
                 tr
                   td Shifter
-                  td Electro-pneumatic, button actuated shifting system resulting in sub-100ms shifts
+                  td Electro-pneumatic, button-actuated shifting system resulting in sub-100ms shifts
                 tr
                   td Final Drive
                   td #520 chain, 11:44 ratio
@@ -94,10 +106,10 @@ block content
                   td Custom aluminum carrier housing Zexel-Torsen torque biasing gears
                 tr
                   td Brakes, Front
-                  td Floating 9.2" Grey Cast Iron Rotors, Brembo Calipers
+                  td Floating 9.25" Steel Rotors, Brembo Calipers
                 tr
                   td Brakes, Rear
-                  td Floating Grey 8" Cast Iron Rotors, Brembo Calipers
+                  td Floating 8" Steel Rotors, Brembo Calipers
               thead
                 tr
                   th Dimensions
@@ -105,19 +117,19 @@ block content
               tbody
                 tr
                   td Wheelbase
-                  td 63″
+                  td 61"
                 tr
                   td Track, Front/Rear
-                  td 47.5″/44.5″
+                  td 46"/46"
                 tr
-                  td Length
-                  td 107.4″
+                  td Overall Length/Width/Height
+                  td 115.5"/53"/47"
                 tr
                   td Weight
-                  td 528 lbs / 239 kg
+                  td 494lb / 224kg
                 tr
                   td Weight Distribution, Front:Rear
-                  td 48.5:51.5
+                  td 50:50
               thead
                 tr
                   th Performance
@@ -125,16 +137,16 @@ block content
               tbody
                 tr
                   td 75 Metre Sprint
-                  td 4.409 s
+                  td 4.811 s
                 tr
                   td Top Speed
-                  td 180 km/h
+                  td 135 km/h
                 tr
                   td Lateral Grip
-                  td 2.0 g
+                  td 1.8 g
                 tr
                   td Braking
-                  td 1.3 g
+                  td 1.4 g
         .col-lg-2
     .row
       .col-lg-2
@@ -151,6 +163,11 @@ block content
               a(href='/car2014/')
                 img.img-responsive(src='/img/car2014.jpg', alt='UV14')
           .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2015
+            .col-lg-12.past-cars
+              a(href='/car2015/')
+                img.img-responsive(src='/img/car2015.jpg', alt='UV15')
+          .col-lg-3
             h3(style="font-weight:800; text-align: center;") 2016
             .col-lg-12.past-cars
               a(href='/car2016/')
@@ -161,15 +178,9 @@ block content
               a(href='/car2017/')
                 img.img-responsive(src='/img/car2017.JPG', alt='UV17')
           .col-lg-3
-            h3(style="font-weight:800; text-align: center;") 2018
-            .col-lg-12.past-cars
-              a(href='/car2018/')
-                img.img-responsive(src='/img/car2018.JPG', alt='UV18')
-          .col-lg-3
             h3(style="font-weight:800; text-align: center;") 2019
             .col-lg-12.past-cars
               a(href='/car2019/')
                 img.img-responsive(src='/img/car2019.jpg', alt='UV19')
-
       .col-lg-2
   include ../_sponsors.jade

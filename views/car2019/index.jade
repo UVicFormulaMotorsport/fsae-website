@@ -11,7 +11,7 @@ block content
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a(href='#' style='margin-bottom:0px;')
+          a(href='/' style='margin-bottom:0px;')
             img(src='/img/logo.png' height="55px")
         div
           #myNavbar.collapse.navbar-collapse
@@ -29,21 +29,44 @@ block content
               li.front-page
                 a(href='/contact/') Contact
 
-  //  THE CARS
+  // ABOUT THE CARS
   .container-fluid
     .row
       .col-lg-2
       .col-lg-8
-        img.img-responsive(src='/img/car2015.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+        img.img-responsive(src='/img/car2019.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
       .col-lg-2
 
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800;")
+          | UV19 Features
+        p
+          | The 2019 car proved to be one of the teams most ambitious undertakings in the last several years due to the many changes made to the design of the cars
+          | and to the teams design philosophy. With the decision to move from 13" to 10" wheels in a goal to reduce the overall vehicle weight and become competitive
+          | with the top tier teams. As well it was decided to switch engines from an outdated Honda CBR600F4i to a newer Honda CBR600RR due to the lack of available
+          | parts for the older engine. These choices resulted in the majority of the parts from the 2018 car to be unusable on the 2019. So the decision was made to
+          | keep the 2018 car for driver training resulting in the need for UV19 to be built from the ground up.
+          br
+          | The 2019 car features many newly engineered components, such as a new intake and exhaust system, new hubs and uprights to accommodate the new 10" centerlock
+          | wheels, a curved front wing, DRS system on the rear wing and many more fascinating components.
+          br
+          | The team faced a lot of adversity in the 2019 year, from an engine blowing up, to suspension carbon fibre a-arm bond failure, to having the entire steering
+          | assembly stolen with less then 2 weeks before competition. Despite the difficult times the team was faced with throughout the season they were able to pull
+          | through and make it to competition with a completed car and compete with their fellow engineers. Although the 2019 FSAE Michigan finish was not the best
+          | result the team has had as compared to previous years the entire team was grateful to have been rewarded for their hard work by making it to competition.
+          | The team is incrediably grateful for all of the sponsors and individuals who supported them throughout the 2019 season and hope they will continue to do so
+          | in the coming 2020 season.
+
+
+      .col-lg-2
     .row
       .col-lg-2
       .col-sm-8
         // Content
         #content
           section.last
-            h3(style="font-weight:800; color: black;") UV15
             table.default
               thead
                 tr
@@ -52,52 +75,52 @@ block content
               tbody
                 tr
                   td Car Number
-                  td 119
+                  td 92
                 tr
                   td Color
-                  td Two tone black and red
+                  td Yellow with red and blue stripes
                 tr
                   td Frame
                   td 4130 Chromoly steel space frame
                 tr
                   td Aero
                   td
-                    | Carbon Fibre: 3-Piece Body, 3-Element Front Wing, 4-Element Rear Wing, Diffuser, and 2 Sidepods
+                    | Carbon Fibre: 4-Piece Body, 3-Element Curved Front Wing, 5-Element Rear Wing, and 3-Element Side Wings
                 tr
                   td Suspension
                   td
-                    | Independent unequal length chromoly A-arms, with pull rod actuated Cane Creek shocks
+                    | Independent unequal length carbon fibre A-arms, with pullrod and pushrod actuated Ohlins dampers
                 tr
                   td Wheels
                   td
-                    | In house centre design machined by Prototype Equipment Design with Kodiak 13×7 shells
+                    | 10" Centerlock OZ one-piece magnesium.
                 tr
                   td Engine
-                  td Honda CBR 600 F4I with Liferacing F88RX
+                  td Honda CBR600RR with Link Thunder ECU
                 tr
                   td Power/Torque
-                  td 95 HP @ 12500 RPM/54 ft·lbs @ 8250 RPM
+                  td 90 HP @ 13500 RPM/50 ft·lbs @ 10000 RPM
                 tr
                   td Fuel
-                  td 100 Octane Race
+                  td 94 Octane Race
                 tr
                   td Transmission
                   td 6-speed Sequential
                 tr
                   td Shifter
-                  td Electro-pneumatic, button actuated shifting system resulting in sub-100ms shifts
+                  td Electro-pneumatic, button-actuated shifting system resulting in sub-100ms shifts
                 tr
                   td Final Drive
-                  td #520 chain, 11:44 ratio
+                  td #520 chain, 11:37 ratio
                 tr
                   td Differential
-                  td Custom aluminum carrier housing Zexel-Torsen torque biasing gears
+                  td Drexler
                 tr
                   td Brakes, Front
-                  td Floating 9.2" Grey Cast Iron Rotors, Brembo Calipers
+                  td Floating 7" Steel Rotors, Brembo Calipers
                 tr
                   td Brakes, Rear
-                  td Floating Grey 8" Cast Iron Rotors, Brembo Calipers
+                  td Floating 7" Steel Rotors, Brembo Calipers
               thead
                 tr
                   th Dimensions
@@ -105,19 +128,19 @@ block content
               tbody
                 tr
                   td Wheelbase
-                  td 63″
+                  td 61"
                 tr
                   td Track, Front/Rear
-                  td 47.5″/44.5″
+                  td 48″/46″
                 tr
-                  td Length
-                  td 107.4″
+                  td Overall Length/Width/Height
+                  td 114.8″/56.5"/47"
                 tr
                   td Weight
-                  td 528 lbs / 239 kg
+                  td 466 lbs / 211 kg
                 tr
                   td Weight Distribution, Front:Rear
-                  td 48.5:51.5
+                  td 48.1:51.9
               thead
                 tr
                   th Performance
@@ -125,16 +148,16 @@ block content
               tbody
                 tr
                   td 75 Metre Sprint
-                  td 4.409 s
+                  td 4.935 s
                 tr
                   td Top Speed
-                  td 180 km/h
+                  td 150 km/h
                 tr
                   td Lateral Grip
                   td 2.0 g
                 tr
                   td Braking
-                  td 1.3 g
+                  td 1.44 g
         .col-lg-2
     .row
       .col-lg-2
@@ -151,6 +174,11 @@ block content
               a(href='/car2014/')
                 img.img-responsive(src='/img/car2014.jpg', alt='UV14')
           .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2015
+            .col-lg-12.past-cars
+              a(href='/car2015/')
+                img.img-responsive(src='/img/car2015.jpg', alt='UV15')
+          .col-lg-3
             h3(style="font-weight:800; text-align: center;") 2016
             .col-lg-12.past-cars
               a(href='/car2016/')
@@ -165,11 +193,5 @@ block content
             .col-lg-12.past-cars
               a(href='/car2018/')
                 img.img-responsive(src='/img/car2018.JPG', alt='UV18')
-          .col-lg-3
-            h3(style="font-weight:800; text-align: center;") 2019
-            .col-lg-12.past-cars
-              a(href='/car2019/')
-                img.img-responsive(src='/img/car2019.jpg', alt='UV19')
-
       .col-lg-2
   include ../_sponsors.jade
