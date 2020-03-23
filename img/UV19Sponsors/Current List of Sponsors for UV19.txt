@@ -7,6 +7,7 @@ MasterCAM (y)
 GA Industries (y)
 AVL Racing (y)
 SKF (y)
+Paradigm Auto Works (y)
 
 Silver:
 Ricardo Software (y)
@@ -33,6 +34,7 @@ Procom (y)
 ECE Department (n)
 EarthX (not this year)
 Photon Control (y)
+RapidHarness (y)
 
 Steel Sponsors:
 Deatschwerks (y)
