@@ -1,0 +1,195 @@
+extends ..//_layout
+
+block content
+  header
+  .nav-wrapper
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='/' style='margin-bottom:0px;')
+            img(src='/img/logo.png' height="55px")
+        div
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.front-page.active
+                a(href='/team/') The Team
+              li.front-page
+                a(href='/car2020/') The Car
+              li.front-page
+                a(href='/competition/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page
+                a(href='/projects/') Projects Blog
+              li.front-page
+                a(href='/contact/') Contact
+
+
+  .container-fluid
+    .row
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/alumni_banner.JPG' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+      .col-lg-2
+  .container-fluid(style="margin-bottom:50px;")
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800;")
+          | The UVic Formula Motorsport Alumni
+        p
+          | The UVic Formula Motorsport team is a university club whose goal is to design and build a new small,
+          | open-wheeled, formula-style car each year.  The car then competes in Formula SAE, which is the world's
+          | largest collegiate design competition.
+          br
+        p
+          | Our members are highly dedicated and motivated students who seek to get the most out of their university experience.
+          | Throughout the year, the team puts thousands of hours into the development of the prototype vehicle, and the
+          | members expand their knowledge far beyond what is achieved during a Bachelor's degree alone.  Team members
+          | gain valuable experience with practical applications of engineering theory, business and relations, hands-on design,
+          | and manufacturing.
+          br
+
+  br
+  .container.marketing
+    .row
+      // Wilson Hay
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Wilson.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Wilson Hay
+            hr(style="margin-top:0;margin-bottom:0;")
+            .small
+              | UV17 Team Lead
+              br
+              | UV16 Fluids Lead
+              br
+
+      // Vinh Tran
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Vinh.JPG', alt='image not found', width='180', height='180')
+        .text-center.h3 Vinh Tran
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV19 Aerodynamics Lead
+            br
+            | UV18 Aerodynamics Lead
+            br
+
+      // Josef Svorkdal
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Josef.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Josef Svorkdal
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV18 Team Lead
+            br
+            | UV17 Aerodynamics Lead
+            br
+
+      // Kyle Mulzet
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Kyle.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Kyle Mulzet
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV18 Powertrain Lead
+            br
+            | UV17 Powertrain Lead
+            br
+
+      // Ryan Vorster
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Ryan.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Ryan Vorster
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV19 Team Lead
+            br
+            | UV18 Vehicle Dynamics Lead
+            br
+
+      // Peter de Schepper
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Peter.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Peter de Schepper
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV18 Driver Controls Lead
+            br
+
+
+  br
+  .container.marketing
+    .row
+      // Brady Planden
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Brady.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Brady Planden
+            hr(style="margin-top:0;margin-bottom:0;")
+            .small
+              | UV16 Powertrain Lead
+              br
+              | UV15 Powertrain Lead
+              br
+
+
+      // Mitch
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Mitch.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Mitch
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV15 Buisness Lead
+            br
+
+
+      // Nick
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Nick.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Nick
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV16 Team Lead
+            br
+            | UV15 Electrical Lead
+            br
+
+      // Neil McLagan
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Neil.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Neil McLagan
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV16 Vehicle Dynamics Lead
+            br
+            | UV15 Vehicle Dynamics Lead
+            br
+
+
+      // Otto
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Otto.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Otto
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV15 Team Lead
+            br
+            | UV14 Driver Controls Lead
+
+      // Jakob Roberts
+      .col-md-6.col-lg-2.teambox
+        img.img-circle.teampic(src='/img/Alumni/Jakob.jpg', alt='image not found', width='180', height='180')
+        .text-center.h3 Jakob Roberts
+          hr(style="margin-top:0;margin-bottom:0;")
+          .small
+            | UV15 Software Lead
+            br
+
+
+  include ../_sponsors.jade

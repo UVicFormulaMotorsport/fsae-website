@@ -1,0 +1,116 @@
+extends ..//_layout
+
+block content
+  header
+  .nav-wrapper
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='/' style='margin-bottom:0px;')
+            img(src='/img/logo.png' height="55px")
+        div
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.front-page.active
+                a(href='/team/') The Team
+              li.front-page
+                a(href='/car2020/') The Car
+              li.front-page
+                a(href='/competition/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page
+                a(href='/projects/') Team Projects
+              li.front-page
+                a(href='/contact/') Contact
+
+
+  .container-fluid
+    .row
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/UV16/img4.jpg' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+      .col-lg-2
+  .container-fluid(style="margin-bottom:50px;")
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800;")
+          | The UVic Formula Motorsport Roster
+        p
+          | The UVic Formula Motorsport team is a collection of bright students with the goal of furthering their
+          | careers by participating in a hands on club. Our members taken on many projects that they research,
+          | design, develop and evaluated during their time on the team. The following list contains of a list of members
+          | that have completed at least one project on our team as well as their classification within the team.
+          br
+
+
+  br
+  .container-responsive
+  .col-lg-2
+  .col-lg-8
+    table.table.table-bordered
+      thead
+        tr
+          th Member
+          th Experience Level
+          th Past Projects
+      tbody
+        tr
+          td Stephen Bradley
+          td Senior Designer
+          td UV19 Project Manager
+        tr
+          td Payton Chernoff
+          td Junior Designer
+          td Springs evaluation
+        tr
+          td Lane Hampson
+          td Junior Designer
+          td
+        tr
+          td Lewis Janzen
+          td Senior Designer
+          td UV16, UV17 and UV18 Chassis Lead
+        tr
+          td Alexander MacKenzie
+          td Junior Designer
+          td
+        tr
+          td Logan O'Reily
+          td Senior Designer
+          td UV19 Brakes, UV19 Bell Cranks, UV19 Suspension and Brakes Lead
+        tr
+          td Koleton Parrish
+          td Junior Designer
+          td UV20 Custom Mufflers
+        tr
+          td Avery Shred
+          td Senior Designer
+          td
+        tr
+          td Eldin Miller-Stead
+          td Senior Designer
+          td UV19 Corner Assembly, UV19 Curved Front Wing, UV19 DRS
+        tr
+          td Blake Stozer
+          td Senior Designer
+          td UV19 Front Wing Mounting, UV19 Front Wing, UV19 DRS,
+        tr
+          td Oliver Wicklund
+          td Senior Designer
+          td UV18 Carbon Fiber Suspension, UV18 A-Arm Nodes, UV19 Carbon Fiber Suspension, UV19 A-Arm Nodes
+        tr
+          td Ariana Wilson
+          td Senior Designer
+          td
+    .col-lg-2
+  .row
+
+  include ../_sponsors.jade

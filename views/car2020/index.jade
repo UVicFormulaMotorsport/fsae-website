@@ -1,0 +1,191 @@
+extends ../_layout
+
+block content
+  link(rel='stylesheet', href='/css/car.css')
+  header
+  .nav-wrapper
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='/' style='margin-bottom:0px;')
+            img(src='/img/logo.png' height="55px")
+        div
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.front-page
+                a(href='/team/') The Team
+              li.front-page.active
+                a(href='/car2020/') The Car
+              li.front-page
+                a(href='/competition/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page
+                a(href='/projects/') Team Projects
+              li.front-page
+                a(href='/contact/') Contact
+
+  // ABOUT THE CARS
+  .container-fluid
+    .row
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/unveiling.JPG' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+      .col-lg-2
+
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800;")
+          | UV20 Features
+        p
+          | More information about the UV20 car will be released once the car has been unveiled.
+
+
+
+      .col-lg-2
+    .row
+      .col-lg-2
+      .col-sm-8
+        // Content
+        #content
+          section.last
+            table.default
+              thead
+                tr
+                  th Specifications
+                  th
+              tbody
+                tr
+                  td Car Number
+                  td 73
+                tr
+                  td Color
+                  td TBD
+                tr
+                  td Frame
+                  td 4130 Chromoly steel space frame
+                tr
+                  td Aero
+                  td
+                    | Carbon Fibre: 4-Piece Body, 3-Element Curved Front Wing, 5-Element Rear Wing, and 3-Element Side Wings
+                tr
+                  td Suspension
+                  td
+                    | Independent unequal length carbon fibre A-arms, with pullrod and pushrod actuated Ohlins dampers
+                tr
+                  td Wheels
+                  td
+                    | 10" Centerlock OZ one-piece magnesium.
+                tr
+                  td Engine
+                  td Honda CBR600RR with Link Thunder ECU
+                tr
+                  td Power/Torque
+                  td TBD
+                tr
+                  td Fuel
+                  td 94 Octane Race
+                tr
+                  td Transmission
+                  td 6-speed Sequential
+                tr
+                  td Shifter
+                  td TBD
+                tr
+                  td Final Drive
+                  td TBD
+                tr
+                  td Differential
+                  td Drexler
+                tr
+                  td Brakes, Front
+                  td Floating 7" Steel Rotors, Brembo Calipers
+                tr
+                  td Brakes, Rear
+                  td Floating 7" Steel Rotors, Brembo Calipers
+              thead
+                tr
+                  th Dimensions
+                  th
+              tbody
+                tr
+                  td Wheelbase
+                  td 61"
+                tr
+                  td Track, Front/Rear
+                  td 48″/46″
+                tr
+                  td Overall Length/Width/Height
+                  td TBD
+                tr
+                  td Weight
+                  td TBD
+                tr
+                  td Weight Distribution, Front:Rear
+                  td TBD
+              thead
+                tr
+                  th Performance
+                  th
+              tbody
+                tr
+                  td 75 Metre Sprint
+                  td TBD
+                tr
+                  td Top Speed
+                  td TBD
+                tr
+                  td Lateral Grip
+                  td TBD
+                tr
+                  td Braking
+                  td TBD
+        .col-lg-2
+    .row
+      .col-lg-2
+      .col-lg-8
+        section.widget.thumbnails
+          .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2013
+            .col-lg-12.past-cars
+              a(href='/car2013/')
+                img.img-responsive(src='/img/car2013.jpg', alt='UV13')
+          .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2014
+            .col-lg-12.past-cars
+              a(href='/car2014/')
+                img.img-responsive(src='/img/car2014.jpg', alt='UV14')
+          .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2015
+            .col-lg-12.past-cars
+              a(href='/car2015/')
+                img.img-responsive(src='/img/car2015.jpg', alt='UV15')
+          .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2016
+            .col-lg-12.past-cars
+              a(href='/car2016/')
+                img.img-responsive(src='/img/car2016.jpg', alt='UV16')
+          .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2017
+            .col-lg-12.past-cars
+              a(href='/car2017/')
+                img.img-responsive(src='/img/car2017.JPG', alt='UV17')
+          .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2018
+            .col-lg-12.past-cars
+              a(href='/car2018/')
+                img.img-responsive(src='/img/car2018.JPG', alt='UV18')
+          .col-lg-3
+            h3(style="font-weight:800; text-align: center;") 2019
+            .col-lg-12.past-cars
+              a(href='/car2019/')
+                img.img-responsive(src='/img/car2019.JPG', alt='UV19')
+      .col-lg-2
+  include ../_sponsors.jade
