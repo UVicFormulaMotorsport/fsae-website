@@ -11,7 +11,7 @@ block content
             span.icon-bar
             span.icon-bar
           a(href='/' style='margin-bottom:0px;')
-            img(src='/img/logo.png' height="55px")
+            img(src='/img/UVFRlogo.png' height="55px")
         div
           #myNavbar.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
@@ -20,13 +20,15 @@ block content
               li.front-page.active
                 a(href='/team/') The Team
               li.front-page
-                a(href='/car2020/') The Car
+                a(href='/newmembers/') Join Our Team
+              li.front-page
+                a(href='/car2020/') Combustion Car
+              li.front-page
+                a(href='/EVcar2021/') Electric Car
               li.front-page
                 a(href='/competition/') The Competition
               li.front-page
                 a(href='/sponsors/') Sponsorship
-              li.front-page
-                a(href='/projects/') Team Projects
               li.front-page
                 a(href='/contact/') Contact
 
@@ -42,9 +44,9 @@ block content
       .col-lg-2
       .col-lg-8
         h1(style="font-weight:800;")
-          | The UVic Formula Motorsport Team
+          | The UVic Formula Racing Team
         p
-          | The UVic Formula Motorsport team is a university club whose goal is to design and build a new small,
+          | The UVic Formula Racing team is a university club whose goal is to design and build a new small,
           | open-wheeled, formula-style car each year.  The car then competes in Formula SAE, which is the world's
           | largest collegiate design competition.
           br
@@ -75,8 +77,8 @@ block content
           | Team Direction
 
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2020/Raimund.JPG', alt='image not found', width='280', height='280')
-        h2 Raimund Mullin
+        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='image not found', width='280', height='280')
+        h2 Peter Touchinski
         h4
           strong
             | Project Manager
@@ -89,11 +91,11 @@ block content
           | Budget Management
 
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='image not found', width='280', height='280')
-        h2 Josiah Macleod
+        img.img-circle.teampic(src='/img/team-2020/Nigel.JPG', alt='image not found', width='280', height='280')
+        h2 Nigel Swab
         h4
           strong
-            | Chief Engineer
+            | Internal Combustion Chief Engineer
         hr(style="margin-top:0;margin-bottom:0;")
         p
           | System Integration
@@ -108,8 +110,22 @@ block content
 
            // Second Row
        .col-md-6.col-lg-4.teambox
-         img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='image not found', width='280', height='280')
-         h2 Peter Touchinski
+         img.img-circle.teampic(src='/img/team-2020/noimg.JPG', alt='image not found', width='280', height='280')
+         h2 Charlie
+         h4
+           strong
+             | Electrical Vehicle Chief Engineer
+         hr(style="margin-top:0;margin-bottom:0;")
+         p
+           | Vehicle Dynamics Simulation
+           br
+           | Tire Modelling
+           br
+           | Data Analysis
+
+       .col-md-6.col-lg-4.teambox
+         img.img-circle.teampic(src='/img/team-2020/Mike.JPG', alt='image not found', width='280', height='280')
+         h2 Mike Mckee
          h4
            strong
              | Powertrain Lead
@@ -122,8 +138,8 @@ block content
            | Launch and Traction Control Calibration
 
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2020/Mike.JPG', alt='image not found', width='280', height='280')
-        h2 Mike Mckee
+        img.img-circle.teampic(src='/img/team-2020/noimg.JPG', alt='image not found', width='280', height='280')
+        h2 Unfilled
         h4
           strong
             | Drivetrain Lead
@@ -135,31 +151,17 @@ block content
           br
           | Differential and Axel Design
 
-      .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2020/Nigel.JPG', alt='image not found', width='280', height='280')
-        h2 Nigel Swab
-        h4
-          strong
-            | Vehicle Dynamics Lead
-        hr(style="margin-top:0;margin-bottom:0;")
-        p
-          | Vehicle Dynamics Simulation
-          br
-          | Tire Modelling
-          br
-          | Data Analysis
-
           br
          .container.marketing
            .row
 
            // Third
        .col-md-6.col-lg-4.teambox
-         img.img-circle.teampic(src='/img/team-2020/Matthew.jpg', alt='image not found', width='280', height='280')
-         h2 Matthew Peters
+         img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='image not found', width='280', height='280')
+         h2 Trevor Ford
          h4
            strong
-             | Electrical Lead
+             | Low Voltage Electrical Lead
          hr(style="margin-top:0;margin-bottom:0;")
          p
            | Wiring Loom Manufacturing
@@ -184,7 +186,7 @@ block content
 
       .col-md-6.col-lg-4.teambox
         img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='image not found', width='280', height='280')
-        h2 Unfilled
+        h2 Jacob Burggraf
         h4
           strong
             | Frame Lead
@@ -199,25 +201,27 @@ block content
           br
          .container.marketing
            .row
+           //END OF THIRD
+
 
            // Fourth
        .col-md-6.col-lg-4.teambox
-         img.img-circle.teampic(src='/img/team-2020/Axel.jpg', alt='image not found', width='280', height='280')
-         h2 Axel Endongo
+         img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='image not found', width='280', height='280')
+         h2 Daniel Vigna
          h4
            strong
-             | Aerodynamics Lead
+             | Composites Lead
          hr(style="margin-top:0;margin-bottom:0;")
          p
-           | Composites
+           | Composites Simulations
            br
            | Composites Manufacturing
            br
            | Mold Design
 
       .col-md-6.col-lg-4.teambox
-        img.img-circle.teampic(src='/img/team-2020/David.jpg', alt='image not found', width='280', height='280')
-        h2 David Kania
+        img.img-circle.teampic(src='/img/team-2020/noimg.jpg', alt='image not found', width='280', height='280')
+        h2 Jarno Gepraegs
         h4
           strong
             | Aerodynamics Lead
@@ -242,6 +246,75 @@ block content
           | Steering Wheel Design
           br
           | Pedal Box Design
+
+          br
+         .container.marketing
+           .row
+
+
+          //Start of fifth row
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2020/noimg.JPG', alt='image not found', width='280', height='280')
+        h2 Zach Smith
+        h4
+          strong
+            | Vehicle Dynamics Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Vehicle Dynamics Simulation
+          br
+          | Tire Modelling
+          br
+          | Data Analysis
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2020/noimg.JPG', alt='image not found', width='280', height='280')
+        h2 Koleton Parrish
+        h4
+          strong
+            | Fluids Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | Fuel Tank Design
+          br
+          | Radiator Evaluation
+          br
+          | Oil Pan Design
+
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2020/noimg.JPG', alt='image not found', width='280', height='280')
+        h2 Unfilled
+        h4
+          strong
+            | High Voltage Electrical Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | beep
+          br
+          | beep
+          br
+          | beep
+
+          br
+         .container.marketing
+           .row
+
+
+      //Sixth Row
+      .col-md-6.col-lg-4.teambox
+        img.img-circle.teampic(src='/img/team-2020/noimg.JPG', alt='image not found', width='280', height='280')
+        h2 Aimee Gray
+        h4
+          strong
+            | Buisness Lead
+        hr(style="margin-top:0;margin-bottom:0;")
+        p
+          | beep
+          br
+          | beep
+          br
+          | beep
+
 
       .col-lg-2
 

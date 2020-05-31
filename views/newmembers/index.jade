@@ -1,0 +1,135 @@
+extends ../_layout
+
+block content
+  header
+  .nav-wrapper
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='/' style='margin-bottom:0px;')
+            img(src='/img/UVFRlogo.png' height="55px")
+        div
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.front-page
+                a(href='/team/') The Team
+              li.front-page.active
+                a(href='/newmembers/') Join Our Team
+              li.front-page
+                a(href='/car2020/') Combustion Car
+              li.front-page
+                a(href='/EVcar2021/') Electric Car
+              li.front-page
+                a(href='/competition/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page
+                a(href='/contact/') Contact
+
+  .container-fluid
+    .row
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/UV19Dallesport.cr2' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+      .col-lg-2
+
+  .container-fluid
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800; font-size: 60px; text-align: center;")
+          | Join The Team
+        p
+          | UVic Formula Racing is an engineering club that has been around since 2001 at the University of Victoria.
+          | Each year the team designs, develops, manufactures, and builds and open wheel formula style race car that
+          | is taken to the United States to compete against other universities from all around the world. While we are
+          | primarily an engineering club we invite anyone from any discipline or interests to come join, this is because
+          | being apart of the team offers members the opportunity to develop skills that they may otherwise not gain
+          | during their time at the university. And while the end product is a racecar, the experiences gained can be
+          | applied to any field of study.
+          br
+        p
+          | If you are interested in any way please fill in this quick questionnaire so we can understand what you are interested in doing and add you to our team Slack!
+          br
+          a(href='https://forms.gle/R7TRYzMfHWwphEDy5' target="_blank")
+            | https://forms.gle/R7TRYzMfHWwphEDy5
+          br
+          | As well feel free to email us anytime uvic.fsae@gmail.com if you have any questions.
+
+      .col-lg-2
+
+  .container-fluid(style="margin-bottom:50px;")
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:400;")
+          | FAQs
+
+        h2(style="font-weight:200;")
+          | Will I get to drive the car?
+        p
+          | Yes and no, each year after competition we let everyone on the team who contributed to the car to take it out for a couple laps.
+          | The drivers we select who get to drive at competition are generally members who have been to the competition at least once, however
+          | we occasionally take people with a strong driving ability to participate in driver tryouts.
+
+        h2(style="font-weight:200;")
+          | Is there a formal sign up process?
+        p
+          |  We have no formal sign up, if you are interested in joining then feel free to whenever you like.
+
+        h2(style="font-weight:200;")
+          | Do I need to have previous knowledge to join the team?
+        p
+          | Absolutely not. This team is all about learning new things, so if you don’t know something
+          | and are passionate about wanting to learn it we will help you in the best ways we can.
+
+        h2(style="font-weight:200;")
+          | Will I be taught how to do ‘blank’?
+        p
+          | Maybe, while we have a lot of knowledgeable members on our team there are still some things
+          | that even we do not know how to do. This is once again the core purpose of the team, to provide
+          | the opportunity/reason to motivate you to learn what you want to learn.
+
+        h2(style="font-weight:200;")
+          | What do I get from joining the club?
+        p
+          | You will gain skills that you may otherwise not be able to gain during your time at university or once you graduate.
+          | Being a part of the club can also open up future job opportunities as many companies see the experience of being in a
+          | club to be more beneficial than your school grades. We have had alumni members go on to work for Bosch, AVL Racing,
+          | Tesla, Joe Gibbs Racing (NASCAR), and many more fantastic places.
+
+        h2(style="font-weight:200;")
+          | Do I need to work on a project?
+        p
+          | Absolutely not. If you are not interested in taking on projects initially and are simply wanting to learn about some
+          | of the things we do this is completely fine and we invite you to come and learn all you wish.
+      .col-lg-2
+
+  .container-fluid(style="margin-bottom:50px;")
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:400;")
+          | Skills That You Can Gain
+
+        h2(style="font-weight:200;")
+          | Engineering Skills That You Can Gain
+        p
+          | Practical uses of things learn in classes, creating professional engineering drawings, FEA (stress analysis) on 3D modelled components
+          | 3D Computer Aided Design (making 3D models of components), using shop tools, electrical wiring of a car, printed circuit board design
+          | and development, testing and validating designed components, carbon fiber manufacturing, engine functionality and tuning, racecar
+          | suspension setup, creating simulations to aid in design choices.
+
+        h2(style="font-weight:200;")
+          | Non-Engineering Skills That You Can Gain
+        p
+          | Working in a large team, project management, sponsorship acquisition and marketing, graphic design, data analysis,
+          | business presentation skills, welding and fabrication, social media content creation, creating promotoional videos.
+
+      .col-lg-2

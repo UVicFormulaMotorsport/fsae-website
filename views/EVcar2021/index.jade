@@ -1,0 +1,55 @@
+extends ../_layout
+
+block content
+  link(rel='stylesheet', href='/css/car.css')
+  header
+  .nav-wrapper
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='/' style='margin-bottom:0px;')
+            img(src='/img/UVFRLogo.png' height="55px")
+        div
+          #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.front-page
+                a(href='/team/') The Team
+              li.front-page
+                a(href='/newmembers/') Join Our Team
+              li.front-page
+                a(href='/car2020/') Combustion Car
+              li.front-page.active
+                a(href='/EVcar2021/') Electric Car
+              li.front-page
+                a(href='/competition/') The Competition
+              li.front-page
+                a(href='/sponsors/') Sponsorship
+              li.front-page
+                a(href='/contact/') Contact
+
+  // ABOUT THE CARS
+  .container-fluid
+    .row
+      .col-lg-2
+      .col-lg-8
+        img.img-responsive(src='/img/unveiling.JPG' style="object-fit:cover; max-height:600px; min-height:300px; width:100%;")
+      .col-lg-2
+
+    .row
+      .col-lg-2
+      .col-lg-8
+        h1(style="font-weight:800;")
+          | Our first ever eletric car: UVE21
+        p
+          | For the first time ever our team is developing an electric car to compete in the electric class in FSAE California with the objective of competing in the 2021 competition.
+
+
+      .col-lg-2
+
+  include ../_sponsors.jade
