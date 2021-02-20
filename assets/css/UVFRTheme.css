@@ -1,0 +1,11 @@
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #FFC528;
+}
+
+.clean-navbar .navbar-nav .nav-link {
+  color: #FFC528;
+  font-weight: 600;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
