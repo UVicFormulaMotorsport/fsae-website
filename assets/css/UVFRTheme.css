@@ -5,7 +5,21 @@
 .clean-navbar .navbar-nav .nav-link {
   color: #FFC528;
   font-weight: 600;
-  font-size: .8rem;
+  font-family: 'Agency';
+  font-size: 1.5rem;
   text-transform: uppercase;
+  margin-right: .5rem;
+  width: inherit;
+  white-space: nowrap;
+  transform: skew(-9deg);
+}
+
+nav-item {
+  margin-top: 1.5rem;
+  padding: 0!important;
+}
+
+#navcol-2 {
+  overflow: auto;
 }
 
