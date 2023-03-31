@@ -1,0 +1,25 @@
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #FFC528;
+}
+
+.clean-navbar .navbar-nav .nav-link {
+  color: #FFC528;
+  font-weight: 600;
+  font-family: 'Agency';
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-right: .5rem;
+  width: inherit;
+  white-space: nowrap;
+  transform: skew(-9deg);
+}
+
+nav-item {
+  margin-top: 1.5rem;
+  padding: 0!important;
+}
+
+#navcol-2 {
+  overflow: auto;
+}
+
